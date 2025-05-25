@@ -2,8 +2,8 @@
   --primary: #5c7cfa;     /* soft indigo */
   --accent: #38d9a9;      /* mint green */
   --warning: #f59f00;     /* warm amber */
-  --background: #14141f;  /* dark gray navy */
-  --surface: #1e1e2f;     /* card bg */
+  --background: #3568b6;  /* dark gray navy */
+  --surface: #284cb1;     /* card bg */
   --text-light: #e0e0e0;
   --text-muted: #999;
 }
@@ -14,10 +14,10 @@ body {
   color: var(--text-light);
 }
 .section:nth-child(even) {
-  background-color: #1a1a2e;
+  background-color: #3568b6;
 }
 .section:nth-child(odd) {
-  background-color: #14141f;
+  background-color: #284cb1;
 }
 .hero {
   height: 100vh;
@@ -36,14 +36,14 @@ body {
   padding: 15px 25px;
   border-radius: 10px;
   margin: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(41, 105, 124, 0.1);
   font-weight: bold;
   transition: transform 0.3s, background 0.3s;
 }
 .btn:hover, .btn-outline:hover {
   transform: translateY(-3px);
   background: var(--accent);
-  color: #1e1e2f;
+  color: #38d9a9;
 }
 .card, .edu-card {
   background: var(--surface);
@@ -115,7 +115,7 @@ a:hover {
   color: var(--primary); 
 }
 footer {
-  background-color: #2a2a40; /* deep violet/navy tone */
+  background-color: #3568b6; /* deep violet/navy tone */
   color: var(--text-light);
   text-align: left;
   padding: 20px 0;
