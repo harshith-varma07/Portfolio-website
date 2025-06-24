@@ -37,7 +37,6 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  overflow: hidden;
 }
 .hero .overlay {
   background: linear-gradient(135deg, rgba(74,144,226,0.2), rgba(80,227,194,0.2));
@@ -49,24 +48,24 @@ body {
 .btn, .btn-outline {
   display: inline-block;
   background: var(--accent);
-  color: var(--white);
-  padding: 12px 20px;
-  border-radius: 8px;
+  color: var(--primary);
+  padding: 15px 25px;
+  border-radius: 10px;
   margin: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-weight: 600;
+  font-weight: bold;
   transition: transform 0.3s, background 0.3s;
 }
 .btn:hover, .btn-outline:hover {
-  transform: translateY(-4px);
-  background: var(--primary);
+  transform: translateY(-3px);
+  background: var(--accent);
+  color: var(--background);
 }
 .card, .edu-card {
   background: var(--surface);
-  color: var(--text-light);
+  color: var(--text);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  overflow: hidden;
   transition: transform 0.6s ease;
 }
 .edu-card:hover {
@@ -137,11 +136,13 @@ html {
 }
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 20px;
+    padding: 50px 20px;
+    text-align: center;
     flex-direction: column;
   }
   .btn, .btn-outline {
     width: 100%;
+    margin:10px 0;
   }
   .edu-container {
     flex-direction: column;
