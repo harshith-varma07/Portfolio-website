@@ -1,10 +1,10 @@
 :root {
-  --primary: #6C63FF;        /* royal purple */
-  --accent: #00C9A7;         /* aqua green */
-  --background: #121212;     /* dark charcoal */
-  --surface: #1E1E1E;        /* card background */
-  --text-light: #f0f0f0;
-  --text-muted: #999;
+  --primary: #4A90E2;        /* soft blue */
+  --accent: #50E3C2;         /* minty green */
+  --background: #F9F9F9;     /* near white */
+  --surface: #FFFFFF;        /* white card background */
+  --text-light: #333333;     /* dark text for light bg */
+  --text-muted: #777;
   --white: #ffffff;
 }
 body {
@@ -19,8 +19,8 @@ body {
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeInUp 0.8s ease-out forwards;
-  animation-delay: 0.2s;
+  animation: fadeInUp 1.6s ease-out forwards;
+  animation-delay: 0.4s;
 }
 @keyframes fadeInUp {
   to {
@@ -40,7 +40,7 @@ body {
   overflow: hidden;
 }
 .hero .overlay {
-  background: linear-gradient(135deg, rgba(108,99,255,0.2), rgba(0,201,167,0.2));
+  background: linear-gradient(135deg, rgba(74,144,226,0.2), rgba(80,227,194,0.2));
   mix-blend-mode: overlay;
   position: absolute;
   inset: 0;
@@ -64,10 +64,10 @@ body {
 .card, .edu-card {
   background: var(--surface);
   color: var(--text-light);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
 }
 .edu-card:hover {
   transform: translateY(-5px) scale(1.02);
@@ -75,7 +75,7 @@ body {
 .edu-card {
   max-width: 320px;
   text-align: center;
-  animation: slideIn 1s ease forwards;
+  animation: slideIn 1.6s ease forwards;
   transform: translateX(-50px);
   opacity: 0;
 }
@@ -114,11 +114,11 @@ body {
 }
 a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--primary);
   transition: color 0.3s ease;
 }
 a:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 footer {
   background-color: var(--surface);
